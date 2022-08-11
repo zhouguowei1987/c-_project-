@@ -6,7 +6,7 @@ using namespace std;
 //引用不是定义一个变量，而是给已存在变量取一个别名，
 //编译器不会为引用变量开辟内存空间，它和它引用的变量共用一块内存空间
 
-void TestRef()
+void TestRef_38()
 {
 	int a = 10;
 	//1、引用在定义是必须初始化
@@ -21,7 +21,7 @@ void TestRef()
 	printf("%p %p %p\n", &a,&ra,&rra);
 }
 
-void TestConstRef()
+void TestConstRef_38()
 {
 	const int a = 10;
 	//int& ra = a;//该语句编译时会出错，a为常量
@@ -41,7 +41,7 @@ void TestConstRef()
 //注意：引用类型必须和引用实体是同种类型的
 
 //1、做参数
-void Swap(int& a, int& b)
+void Swap_38(int& a, int& b)
 {
 	//因为引用使用的是变量原空间，所以可以直接交换
 	int temp = a;
@@ -51,7 +51,7 @@ void Swap(int& a, int& b)
 
 //2、做返回值
 //由于存在栈中的地址，在函数结束后回还给操作系统，所以引用做返回值时，不能用栈中的地址
-int& Add(int a, int b)
+int& Add_38(int a, int b)
 {
 	//这里的c是局部变量，引用做返回值，返回的是c的别名，而c已经被回还给操作系统了。
 	int c = a + b;
@@ -60,10 +60,10 @@ int& Add(int a, int b)
 
 int main_38()
 {
-	TestRef();
-	int& ret = Add(1, 2);
-	cout << "Add(1,2) is :" << ret << endl;
-	int& ret1 = Add(3, 4);
-	cout << "Add(3,4) is :" << ret1 << endl;
+	TestRef_38();
+	int& ret = Add_38(1, 2);
+	cout << "Add_38(1,2) is :" << ret << endl;
+	int& ret1 = Add_38(3, 4);
+	cout << "Add_38(3,4) is :" << ret1 << endl;
 	return 0;
 }

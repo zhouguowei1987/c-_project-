@@ -160,12 +160,18 @@
     <ClCompile Include="38_引用.cpp" />
     <ClCompile Include="39_引用和指针的区别.cpp" />
     <ClCompile Include="3_while.cpp" />
+    <ClCompile Include="40_内联函数.cpp" />
     <ClCompile Include="4_do_while.cpp" />
     <ClCompile Include="5_array.cpp" />
     <ClCompile Include="6_利用new在堆区开辟内存.cpp" />
     <ClCompile Include="7_引用的使用.cpp" />
     <ClCompile Include="8_引用做函数的参数.cpp" />
     <ClCompile Include="9_引用做函数返回值.cpp" />
+    <ClCompile Include="41_inlineF.cpp" />
+    <ClCompile Include="41_inlineFMain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="41_inlineF.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

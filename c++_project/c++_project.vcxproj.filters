@@ -132,5 +132,19 @@
     <ClCompile Include="39_引用和指针的区别.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="40_内联函数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="41_inlineF.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="41_inlineFMain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="41_inlineF.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
